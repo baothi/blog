@@ -13,13 +13,13 @@
 
   <div class="field">
     <%= f.label :title %><br>
-    <%= f.text_field :title %>
+    <%= f.text_field :title, class: 'form-control', placeholder: 'Title of article', autofocus: true %>
   </div>
   <div class="field">
     <%= f.label :body %><br>
-    <%= f.text_field :body %>
+    <%= f.text_area :body, rows: 10, class: 'form-control', placeholder: 'Body of article' %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit class: 'btn btn-primary btn-lg pull-right' %>
   </div>
 <% end %>

@@ -28,7 +28,7 @@
     <% flash.each do |name, msg | %>
       <div class='alert alert-<%= "#{ name }" %>' >
         <a href='#' class='close' data-dismiss='alert' &#215;></a>
-        <%= content_tag :div, :div, msg, :id => "flash_#{name}" if msg.is_a?(string) %>
+        <%#= content_tag :div, :div, msg, :id => "flash_#{name}" if msg.is_a?(string) %>
       </div>
     <% end %>
   
